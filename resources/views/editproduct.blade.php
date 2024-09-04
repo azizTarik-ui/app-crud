@@ -12,7 +12,7 @@
   </head>
   <body>
 
-  <form action="{{route('addproduct.update' ,$productId->id)}}" method="POST" enctype="multipart/formdata">
+  <form action="{{route('product.update' ,$product->id)}}" method="POST" enctype="multipart/formdata">
   @csrf
   <div class="mb-3 row">
     <label for="" class="col-sm-2 col-form-label">Name</label>

@@ -21,9 +21,9 @@ class ProductController extends Controller
     }
 
     public function editProduct ($id){
-        $user = ProductModel::find($id);
+        $product = ProductModel::find($id);
         // return $data;
-        return view('editproduct', compact('productId'));
+        return view('editproduct', compact('product'));
     }
 
     public function update (Request $request, $id){
@@ -36,7 +36,7 @@ class ProductController extends Controller
         return redirect('/');
     }
     public function destroy ($id){
-        $product = ProductModel::find($id);
+        $product = ProductModel::find($id)->delete();
         return redirect('/');
     }
 }

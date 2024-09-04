@@ -28,15 +28,15 @@
     </tr>
   </thead>
   <tbody>
-    @foreach($users as $key=>$user)
+    @foreach($products as $key=>$product)
     <tr>
       <th scope="row">{{++$key}}</th>
-      <td>{{$user->name}}</td>
-      <td>{{$user->email}}</td>
-      <td>{{$user->username}}</td>
+      <td>{{$product->name}}</td>
+      <td>{{$product->type}}</td>
+      <td>{{$product->quantity}}</td>
       <td>
-        <a href="{{route('product.edit',$user->id)}}" class="btn btn-primary">Edit</a>
-        <a href="{{route('product.destroy',$user->id)}}" onclick="return confirm('Are you sure?')" class="btn btn-danger">Delete</a>
+        <a href="{{route('product.edit',$product->id)}}" class="btn btn-primary">Edit</a>
+        <a href="{{route('product.destroy',$product->id)}}" onclick="return confirm('Are you sure?')" class="btn btn-danger">Delete</a>
     </td>
     </tr>
     @endforeach
