@@ -17,19 +17,19 @@
   <div class="mb-3 row">
     <label for="" class="col-sm-2 col-form-label">Name</label>
     <div class="col-sm-10">
-      <input type="text" name="name" class="form-control" id="">
+      <input type="text" name="name" value="{{$product->name}}" class="form-control" id="">
     </div>
     <label for="" class="col-sm-2 col-form-label">Type</label>
     <div class="col-sm-10">
-      <input type="text" name="type" class="form-control" id="">
+      <input type="text" name="type" value="{{$product->type}}" class="form-control" id="">
     </div>
     <label for="" class="col-sm-2 col-form-label">Quantity</label>
     <div class="col-sm-10">
-      <input type="text" name="quantity" class="form-control" id="">
+      <input type="text" name="quantity" value="{{$product->quantity}}" class="form-control" id="">
     </div>
   <div class="mb-3 row">
     <div class="col-sm-10">
-      <input type="submit" value="Add" class="form-control" id="">
+      <input type="submit" value="Update" class="form-control" id="">
     </div>
   </div>
   </form>

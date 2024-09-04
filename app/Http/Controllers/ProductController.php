@@ -20,7 +20,7 @@ class ProductController extends Controller
         return redirect('/');
     }
 
-    public function editProduct ($id){
+    public function edit ($id){
         $product = ProductModel::find($id);
         // return $data;
         return view('editproduct', compact('product'));
